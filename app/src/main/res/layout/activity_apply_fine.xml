@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/lavender"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/baseline_currency_rupee_24" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fine Generator"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/akaya_kanadaka" />
+    </LinearLayout>
+
+    <!-- Form Card -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="24dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            android:layout_marginTop="70dp"
+            android:padding="24dp"
+            android:backgroundTint="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp">
+
+                <!-- Heading -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apply Fine"
+                    android:textSize="24sp"
+                    android:textColor="@color/lavender"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/akaya_kanadaka"
+                    android:layout_marginBottom="24dp" />
+
+                <!-- User ID Field -->
+                <EditText
+                    android:id="@+id/userIdEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="User ID"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="16dp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="20dp" />
+
+                <!-- Violation Details Field -->
+                <EditText
+                    android:id="@+id/violationDetailsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Violation Details"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="16dp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="20dp" />
+
+                <!-- Fine Amount Field -->
+                <EditText
+                    android:id="@+id/fineAmountEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Fine Amount"
+                    android:inputType="number"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="16dp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="20dp" />
+
+                <!-- Bike Number Field -->
+                <EditText
+                    android:id="@+id/bikeNoEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bike No."
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="16dp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="20dp" />
+
+                <!-- Violation Type Spinner -->
+                <Spinner
+                    android:id="@+id/violationTypeSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:padding="16dp" /> <!-- Added padding to increase touch target -->
+
+                <!-- Apply Fine Button -->
+                <Button
+                    android:id="@+id/applyFineButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apply Fine"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/gradient_button"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+    <!-- Footer -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lavender"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="© 2025 Traffic Violation System"
+        android:textColor="#263238"
+        android:textSize="14sp" />
+</LinearLayout>
