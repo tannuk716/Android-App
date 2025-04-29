@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Violation</string>
+    <string name="app_logo">App Logo</string>
+    <string name="app_version">Version 1.0.0</string>
+    <string name="app_icon_desc">App Icon</string>
+
+    <string name="apply_fine">Apply Fine</string>
+    <string name="user_id_hint">User ID</string>
+    <string name="additional_details_hint">Additional Details (Optional)</string>
+    <string name="fine_amount_hint">Fine Amount</string>
+    <string name="apply_fine_button">Apply Fine</string>
+    <string name="copyright_text">© 2025 Traffic Violation System</string>
+</resources>
