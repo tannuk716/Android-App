@@ -4,10 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="Violation.app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-04-26T14:27:36.880791400Z">
+        <DropdownSelection timestamp="2025-04-26T23:08:13.089470900Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\krish\.android\avd\Tannu.avd" />
+              <DeviceId pluginId="PhysicalDevice" identifier="serial=dd26fb885a88" />
             </handle>
           </Target>
         </DropdownSelection>

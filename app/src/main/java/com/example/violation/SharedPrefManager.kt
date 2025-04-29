@@ -22,8 +22,8 @@ class SharedPrefManager private constructor(context: Context) {
         private const val KEY_FINE_DATA = "fineData"
 
         // Admin credentials
-        private const val ADMIN_EMAIL = "vikas2412@gmail.com"
-        private const val ADMIN_PASSWORD = "Vik@s2412"
+        private const val ADMIN_EMAIL = "admin"
+        private const val ADMIN_PASSWORD = "admin123"
 
         @Volatile
         private var instance: SharedPrefManager? = null
